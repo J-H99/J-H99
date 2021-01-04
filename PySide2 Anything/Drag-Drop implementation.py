@@ -44,7 +44,7 @@ class tableWidgetMain(QTableWidget):
             for url in event.mimeData().urls():
                 file_path_temp = url.toLocalFile()
             print(file_path_temp)
-
+            # Show file path in console and messagebox
             self.infoBox = QMessageBox()
             self.infoBox.setWindowTitle("File Path")
             self.infoBox.setText(file_path_temp)
